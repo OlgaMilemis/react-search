@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+      <footer>
+        This project was coded by caro gierich and is open-sourced on{" "}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/OlgaMilemis/react-search"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          GitHub
+        </a>{" "}
+        and hosted on{" "}
+        <a
+          href="https://hardcore-booth-eb65d6.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Netlify
         </a>
-      </header>
+      </footer>
     </div>
   );
 }
-
-export default App;
