@@ -3,11 +3,11 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  const [loaded, setLoaded] = useState(false);
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function showWeather(response) {
     setWeatherData({
+      loaded: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
@@ -15,10 +15,9 @@ export default function Weather() {
       wind: response.data.wind.speed,
       city: response.data.name,
     });
-    setLoaded(true);
   }
 
-  if (loaded) {
+  if (weatherData.loaded) {
     return (
       <div className="Weather">
         <form className="row">
@@ -41,7 +40,7 @@ export default function Weather() {
         <h1>{weatherData.city}</h1>
         <ul>
           <li>Tuesday 11:35</li>
-          <li>{weatherData.description}</li>
+          <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-5">
           <div className="col-6">
