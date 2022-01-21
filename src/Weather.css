@@ -19,19 +19,18 @@
   line-height: 25px;
   list-style: none;
 }
-.Weather img {
+.WeatherInfo img {
   margin-right: 20px;
-  position: relative;
+
   height: 64px;
   width: 64px;
-  top: -20px;
 }
-.Weather .temperature {
+.Temperature .temperature {
   padding-left: 10px;
   font-size: 50px;
   line-height: 1;
 }
-.Weather .unit {
+.Temperature .unit {
   position: relative;
   font-size: 20px;
   top: -34px;
