@@ -9,7 +9,10 @@ export default function Forecast() {
           <div className="ForecastDay">Thu</div>
           <div className="icon">
             {" "}
-            <img />
+            <img
+              src="http://openweathermap.org/img/wn/01n@2x.png"
+              alt="broken clouds"
+            />
           </div>
           <div className="Forecast-temp">
             <span className="Forecast-tempMax">10°</span>

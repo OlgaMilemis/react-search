@@ -35,3 +35,12 @@
   font-size: 20px;
   top: -34px;
 }
+
+.Forecast {
+  text-align: center;
+}
+
+.Forecast-tempMin {
+  opacity: 0.6;
+  margin-left: 5px;
+}
