@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function ForecastDay(props) {
-  function day() {
-    let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
+  let icon = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
 
+  function day() {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -22,7 +22,7 @@ export default function ForecastDay(props) {
   return (
     <div>
       <div className="ForecastDay">{day()}</div>
-      <img src={props.data.icon} alt={props.data.description} />
+      <img src={icon} alt={props.data.description} />
       <div className="Forecast-temps">
         <span className="Forecast-tempMax">{tempMax()}</span>
         <span className="Forecast-tempMin">{tempMin()}</span>
