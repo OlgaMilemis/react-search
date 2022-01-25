@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
       </ul>
 
       <div className="row mt-5">
-        <div className="col-6">
+        <div className="col-12 col-md-6 ">
           <div className="d-flex">
             <div className="float-left">
               {" "}
